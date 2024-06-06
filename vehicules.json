@@ -1,0 +1,114 @@
+{
+ "columns": [
+  {
+   "name": "Num_Acc",
+   "label": "Num\u00e9ro d'identification de l'accident",
+   "dtype": "int64",
+   "index": 0
+  },
+  {
+   "name": "senc",
+   "label": "Sens de circulation",
+   "dtype": "object",
+   "values": {
+    "-1": "non renseign\u00e9",
+    "0": "Inconnu",
+    "1": "PK ou PR ou num\u00e9ro d'adresse postale croisant",
+    "2": "PK ou PR ou num\u00e9ro d'adresse postale d\u00e9croisant",
+    "3": "Absence de rep\u00e8re"
+   },
+   "index": 1
+  },
+  {
+   "name": "catv",
+   "label": "cat\u00e9gorie de v\u00e9hicule",
+   "dtype": "object",
+   "values": {
+    "01": "Bicyclette",
+    "02": "Cyclomoteur <50cm3",
+    "03": "Voiturette (Quadricycle \u00e0 moteur carross\u00e9) (anciennement \"voiturette ou tricycle \u00e0 moteur\")",
+    "04": "R\u00e9f\u00e9rence plus utilis\u00e9e depuis 2006 (scooter immatricul\u00e9)",
+    "05": "R\u00e9f\u00e9rence plus utilis\u00e9e depuis 2006 (motocyclette)",
+    "06": "R\u00e9f\u00e9rence plus utilis\u00e9e depuis 2006 (side-car)",
+    "07": "VL seul",
+    "08": "Cat\u00e9gorie plus utilis\u00e9e (VL + caravane)",
+    "09": "Cat\u00e9gorie plus utilis\u00e9e (VL + remorque)",
+    "10": "VU seul 1,5T <= PTAC <= 3,5T avec ou sans remorque (anciennement VU seul 1,5T <= PTAC <=3,5T)",
+    "11": "R\u00e9f\u00e9rence plus utilis\u00e9e depuis 2006 (VU (10) + caravane)",
+    "12": "R\u00e9f\u00e9rence plus utilis\u00e9e depuis 2006 (VU (10) + remorque)",
+    "13": "PL seul 3,5T <PTCA <= 7,5T",
+    "14": "PL seul > 7,5T",
+    "15": "PL > 3,5T + remorque",
+    "16": "Tracteur routier seul",
+    "17": "Tracteur routier + semi-remorque",
+    "18": "R\u00e9f\u00e9rence plus utilis\u00e9e depuis 2006 (transport en commun)",
+    "19": "R\u00e9f\u00e9rence plus utilis\u00e9e depuis 2006 (tramway)",
+    "20": "Engin sp\u00e9cial",
+    "21": "Tracteur agricole",
+    "30": "Scooter < 50 cm3",
+    "31": "Motocyclette > 50 cm3 et <= 125 cm3",
+    "32": "Scooter > 50 cm3 et <= 125 cm3",
+    "33": "Motocyclette > 125 cm3",
+    "34": "Scooter > 125 cm3",
+    "35": "Quad l\u00e9ger <= 50 cm3 (Quadricycle \u00e0 moteur non carross\u00e9)",
+    "36": "Quad lourd > 50 cm3 (Quadricycle \u00e0 moteur non carross\u00e9)",
+    "37": "Autobus",
+    "38": "Autocar",
+    "39": "Train",
+    "40": "Tramway",
+    "99": "Autre v\u00e9hicule"
+   },
+   "index": 1
+  },
+  {
+   "name": "occutc",
+   "label": "Nombre d'occupants dans le transport en commun",
+   "dtype": "object",
+   "index": 2
+  },
+  {
+   "name": "obs",
+   "label": "Obstacle fixe heurt\u00e9",
+   "dtype": "object",
+   "index": 3
+  },
+  {
+   "name": "obsm",
+   "label": "Obstacle mobile heurt\u00e9",
+   "dtype": "object",
+   "index": 4
+  },
+  {
+   "name": "choc",
+   "label": "Point de choc initial",
+   "dtype": "object",
+   "index": 5
+  },
+  {
+   "name": "manv",
+   "label": "Man\u0153uvre principale avant l'accident",
+   "dtype": "object",
+   "index": 6
+  },
+  {
+   "name": "num_veh",
+   "label": "Identifiant de v\u00e9hicule, y compris pi\u00e9tons heurt\u00e9s",
+   "dtype": "object",
+   "index": 7
+  },
+  {
+   "name": "id_vehicule",
+   "label": "Identifiant unique de v\u00e9hicule, y compris pi\u00e9tons heurt\u00e9s",
+   "dtype": "object",
+   "index": 9
+  },
+  {
+   "name": "motor",
+   "dtype": "object",
+   "label": "type de motorisation du v\u00e9hicule",
+   "index": 8
+  }
+ ],
+ "nb_rows": 2009395,
+ "nb_cols": 9
+}

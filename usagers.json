@@ -1,0 +1,199 @@
+{
+ "columns": [
+  {
+   "name": "Num_Acc",
+   "label": "Identifiant de l'accident",
+   "description": "Identifiant de l'accident identique \u00e0 celui du fichier caract\u00e9ristiques repris pour chacun des usagers d\u00e9crits impliqu\u00e9s dans l'accident",
+   "dtype": "int64",
+   "index": 0
+  },
+  {
+   "name": "place",
+   "label": "Place dans le v\u00e9hicule occup\u00e9e par l'usager",
+   "description": "",
+   "dtype": "object",
+   "index": 1
+  },
+  {
+   "name": "catu",
+   "dtype": "object",
+   "values": {
+    "1": "Conducteur",
+    "2": "Passager",
+    "3": "Pi\u00e9ton",
+    "4": "Pi\u00e9ton en roller ou en trottinette  Voir Note"
+   },
+   "index": 2
+  },
+  {
+   "name": "grav",
+   "dtype": "int64",
+   "index": 3,
+   "values": {
+    "1": "indemne",
+    "2": "Tu\u00e9",
+    "3": "Bless\u00e9 hospitalis\u00e9",
+    "4": "Bless\u00e9 l\u00e9ger"
+   }
+  },
+  {
+   "name": "sexe",
+   "dtype": "object",
+   "label": "Sexe",
+   "description": "Cette variable d\u00e9crit le sexe de l'usager",
+   "values": {
+    "1": "Masculin",
+    "2": "F\u00e9minin"
+   },
+   "index": 4
+  },
+  {
+   "name": "trajet",
+   "dtype": "object",
+   "values": {
+    "-1": "Non renseign\u00e9",
+    "0": "Non renseign\u00e9",
+    "1": "Domicile - travail",
+    "2": "Domicile - \u00e9cole",
+    "3": "Courses - Achats",
+    "4": "Utilisation professionnelle",
+    "5": "Promenade loisirs",
+    "9": "Autre"
+   },
+   "index": 5
+  },
+  {
+   "name": "secu",
+   "dtype": "object",
+   "values": {},
+   "index": 6
+  },
+  {
+   "name": "locp",
+   "dtype": "object",
+   "label": "Localisation du pi\u00e9ton",
+   "values": {
+    "0": "Sans objet",
+    "1": "Sur la chauss\u00e9e, \u00e0 plus de 50 m du passage pi\u00e9ton",
+    "2": "Sur la chauss\u00e9e, \u00e0 \u2013 50 m du passage pi\u00e9ton",
+    "3": "Sur passage pi\u00e9ton sans signalisation lumineuse",
+    "4": "Sur passage pi\u00e9ton avec signalisation lumineuse",
+    "5": "Sur trottoir",
+    "6": "Sur accotement",
+    "7": "Sur refuge ou BAU "
+   },
+   "index": 7
+  },
+  {
+   "name": "actp",
+   "dtype": "object",
+   "label": "Action du pi\u00e9ton",
+   "values": {
+    "0": "non renseign\u00e9 ou sans objet",
+    "1": "Se d\u00e9pla\u00e7ant, sens v\u00e9hicule heurtant",
+    "2": "Se d\u00e9pla\u00e7ant, sens inverse du v\u00e9hicule",
+    "3": "Traversant",
+    "4": "Masqu\u00e9",
+    "5": "Jouant \u2013 courant",
+    "6": "Avec animal",
+    "9": "Autre"
+   },
+   "index": 8
+  },
+  {
+   "name": "etatp",
+   "dtype": "object",
+   "index": 9,
+   "values": {
+    "1": "Seul",
+    "2": "Accompagn\u00e9",
+    "3": "En groupe"
+   }
+  },
+  {
+   "name": "an_nais",
+   "dtype": "float64",
+   "label": "Ann\u00e9e de naissance de l'usager",
+   "index": 10
+  },
+  {
+   "name": "num_veh",
+   "label": "Num\u00e9ro de v\u00e9hicule",
+   "Description": "Identifiant du v\u00e9hicule repris pour chacun des usagers occupant ce v\u00e9hicule (y compris les pi\u00e9tons qui sont rattach\u00e9s aux v\u00e9hicules qui les ont heurt\u00e9s)",
+   "dtype": "object",
+   "index": 11
+  },
+  {
+   "name": "id_vehicule",
+   "dtype": "object",
+   "index": 12
+  },
+  {
+   "name": "secu1",
+   "dtype": "object",
+   "label": "\u00c9quipement de s\u00e9curit\u00e9 n\u00b0 1",
+   "description": "Le renseignement du caract\u00e8re indique la pr\u00e9sence et l\u2019utilisation de l\u2019\u00e9quipement de s\u00e9curit\u00e9",
+   "values": {
+    "-1": "Non renseign\u00e9",
+    "0": "Aucun \u00e9quipement",
+    "1": "Ceinture",
+    "2": "Casque",
+    "3": "Dispositif enfants",
+    "4": "Gilet r\u00e9fl\u00e9chissant",
+    "5": "Airbag (2RM/3RM)",
+    "6": "Gants (2RM/3RM)",
+    "7": "Gants + Airbag (2RM/3RM)",
+    "8": "Non d\u00e9terminable",
+    "9": "Autre"
+   },
+   "index": 13
+  },
+  {
+   "name": "secu2",
+   "dtype": "object",
+   "index": 14,
+   "label": "\u00c9quipement de s\u00e9curit\u00e9 n\u00b0 2",
+   "description": "Le renseignement du caract\u00e8re indique la pr\u00e9sence et l\u2019utilisation de l\u2019\u00e9quipement de s\u00e9curit\u00e9",
+   "values": {
+    "-1": "Non renseign\u00e9",
+    "0": "Aucun \u00e9quipement",
+    "1": "Ceinture",
+    "2": "Casque",
+    "3": "Dispositif enfants",
+    "4": "Gilet r\u00e9fl\u00e9chissant",
+    "5": "Airbag (2RM/3RM)",
+    "6": "Gants (2RM/3RM)",
+    "7": "Gants + Airbag (2RM/3RM)",
+    "8": "Non d\u00e9terminable",
+    "9": "Autre"
+   }
+  },
+  {
+   "name": "secu3",
+   "dtype": "object",
+   "index": 15,
+   "label": "\u00c9quipement de s\u00e9curit\u00e9 n\u00b0 3",
+   "description": "Le renseignement du caract\u00e8re indique la pr\u00e9sence et l\u2019utilisation de l\u2019\u00e9quipement de s\u00e9curit\u00e9",
+   "values": {
+    "-1": "Non renseign\u00e9",
+    "0": "Aucun \u00e9quipement",
+    "1": "Ceinture",
+    "2": "Casque",
+    "3": "Dispositif enfants",
+    "4": "Gilet r\u00e9fl\u00e9chissant",
+    "5": "Airbag (2RM/3RM)",
+    "6": "Gants (2RM/3RM)",
+    "7": "Gants + Airbag (2RM/3RM)",
+    "8": "Non d\u00e9terminable",
+    "9": "Autre"
+   }
+  },
+  {
+   "name": "id_usager",
+   "dtype": "object",
+   "index": 16
+  }
+ ],
+ "nb_rows": 2636377,
+ "nb_cols": 17
+}

@@ -1,0 +1,182 @@
+{
+ "columns": [
+  {
+   "name": "Num_Acc",
+   "label": "Num\u00e9ro d'identifiant de l'accident",
+   "dtype": "object",
+   "index": 0
+  },
+  {
+   "name": "an",
+   "label": "Ann\u00e9e de l'accident",
+   "dtype": "int64",
+   "index": 1
+  },
+  {
+   "name": "mois",
+   "dtype": "object",
+   "label": "Mois de l'accident",
+   "index": 2,
+   "values ": {
+    "1": "janvier",
+    "2": "f\u00e9vrier",
+    "3": "mars",
+    "4": "avril",
+    "5": "mai",
+    "6": "juin",
+    "7": "juillet",
+    "8": "ao\u00fbt",
+    "9": "septembre",
+    "10": "octobre",
+    "11": "novembre",
+    "12": "d\u00e9cembre"
+   }
+  },
+  {
+   "name": "jour",
+   "dtype": "int64",
+   "label": "Jour du mois de l'accident",
+   "index": 3
+  },
+  {
+   "name": "jsem",
+   "dtype": "int64",
+   "label": "Jour de la semaine",
+   "index": 16,
+   "values": {
+    "0": "lundi",
+    "1": "mardi",
+    "2": "mercredi",
+    "3": "jeudi",
+    "4": "vendredi",
+    "5": "samedi",
+    "6": "dimanche"
+   }
+  },
+  {
+   "name": "hrmn",
+   "dtype": "object",
+   "label": "Heure de l'accident",
+   "index": 4
+  },
+  {
+   "name": "lum",
+   "dtype": "object",
+   "label": "Lumi\u00e8re",
+   "description": "Condition d'\u00e9clairage lorsque l'accident s'est produit",
+   "values": {
+    "1": "plein jour",
+    "2": "Cr\u00e9puscule - aube",
+    "3": "Nuit sans \u00e9clairage public",
+    "4": "Nuit avec \u00e9clairage public non allum\u00e9",
+    "5": "Nuit avec \u00e9clairage public allum\u00e9"
+   },
+   "index": 5
+  },
+  {
+   "name": "agg",
+   "dtype": "int64",
+   "label": "Localisation",
+   "description": "Indication en ou hors agglom\u00e9ration",
+   "values": {
+    "1": "Hors agglom\u00e9ration",
+    "2": "En agglom\u00e9ration"
+   },
+   "index": 6
+  },
+  {
+   "name": "int",
+   "dtype": "object",
+   "label": "Intersection",
+   "values": {
+    "1": "Hors intersection",
+    "2": "Intersection en X",
+    "3": "Intersection en T",
+    "4": "Intersection en Y",
+    "5": "Intersection \u00e0 plus de 4 branches",
+    "6": "Giratoire",
+    "7": "Place",
+    "8": "Passage \u00e0 niveau",
+    "9": "Autre intersection "
+   },
+   "index": 7
+  },
+  {
+   "name": "atm",
+   "dtype": "object",
+   "label": "Conditions atmosph\u00e9riques",
+   "values": {
+    "-1": "Non renseign\u00e9",
+    "1": "Normale",
+    "2": "Pluie l\u00e9g\u00e8re",
+    "3": "Pluie forte",
+    "4": "Neige - gr\u00eale",
+    "5": "Brouillard - fum\u00e9e",
+    "6": "Vent fort - temp\u00eate",
+    "7": "Temps \u00e9blouissant",
+    "8": "Temps couvert",
+    "9": "Autre"
+   },
+   "index": 8
+  },
+  {
+   "name": "col",
+   "dtype": "object",
+   "label": "Type de collision",
+   "values": {
+    "-1": "Non renseign\u00e9",
+    "1": "Deux v\u00e9hicules - frontale",
+    "2": "Deux v\u00e9hicules \u2013 par l\u2019arri\u00e8re",
+    "3": "Deux v\u00e9hicules \u2013 par le cot\u00e9",
+    "4": "Trois v\u00e9hicules et plus \u2013 en cha\u00eene",
+    "5": "Trois v\u00e9hicules et plus - collisions multiples",
+    "6": "Autre collision",
+    "7": "Sans collision"
+   },
+   "index": 9
+  },
+  {
+   "name": "com",
+   "dtype": "object",
+   "index": 10
+  },
+  {
+   "name": "adr",
+   "dtype": "object",
+   "label": "Adresse postale",
+   "description": "adresse postale pour les accidents survenus en agglom\u00e9ration",
+   "index": 11
+  },
+  {
+   "name": "gps",
+   "dtype": "object",
+   "index": 12
+  },
+  {
+   "name": "lat",
+   "dtype": "object",
+   "label": "Latitude",
+   "index": 13
+  },
+  {
+   "name": "long",
+   "dtype": "object",
+   "label": "longitude",
+   "index": 14
+  },
+  {
+   "name": "dep",
+   "label": "D\u00e9partement",
+   "description": "Code INSEE du d\u00e9partement, (2A : Corse du Sud - 2B : Haute Corse)",
+   "dtype": "object",
+   "index": 15
+  },
+  {
+   "name": "Accident_Id",
+   "dtype": "float64",
+   "index": 16
+  }
+ ],
+ "nb_rows": 1176873,
+ "nb_cols": 17
+}
