@@ -1,6 +1,6 @@
 name : essai-push
 
-on [push]
+on : [push]
 
 jobs :
 
