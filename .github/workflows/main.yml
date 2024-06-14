@@ -1,0 +1,14 @@
+name : essai-push
+
+on [push]
+
+jobs :
+
+  travail:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
+      - run echo "Esssai"
+  
